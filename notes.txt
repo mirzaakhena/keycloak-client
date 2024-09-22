@@ -1,0 +1,9 @@
+1. basically frontend never talk directly to keycloak. it will be talk through the backend
+2. after success login, frontend will store the token in secure cookie
+3. whenever frontend want to talk to backend it will include the access_token in Authorization header
+4. backend will validate the access_token in local, it is expired, backend will ask the refresh_token to frontend via response
+
+question
+1. how and where to store the access_token in secure cookie from the front end side?
+2. where the frontend store the refresh token?
+3. how to download ke public key from keycloak?

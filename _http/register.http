@@ -1,0 +1,52 @@
+POST http://localhost:8081/register
+
+{
+  "username": "newuser",
+  "password": "password123",
+  "email": "mirzaakhena@gmail.com",
+  "firstName": "Mir",
+  "lastName": "Kenken"
+}
+###
+
+POST http://localhost:8081/login
+
+{
+  "username": "newuser",
+  "password": "password123"
+}
+
+###
+
+GET http://localhost:8081/users
+
+###
+
+PUT http://localhost:8081/user/eab3c263-d3e6-49ab-8c55-f33cad6aee1f
+
+{
+  "firstName": "New First Name",
+  "lastName": "New Last Name",
+  "email": "newemail@example.com"
+}
+
+###
+
+DELETE http://localhost:8081/user/072fe063-b4b0-4dee-8c39-266d7c34e609
+
+###
+
+POST http://localhost:8081/user/eab3c263-d3e6-49ab-8c55-f33cad6aee1f/roles
+
+{
+  "roles": ["editor", "viewer"]
+}
+
+###
+
+GET http://localhost:8081/roles
+
+
+###
+
+GET http://localhost:8081/user/eab3c263-d3e6-49ab-8c55-f33cad6aee1f
