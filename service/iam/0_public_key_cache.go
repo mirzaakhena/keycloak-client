@@ -1,4 +1,4 @@
-package iam3
+package iam
 
 import (
 	"crypto/rsa"

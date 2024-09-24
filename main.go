@@ -1,7 +1,7 @@
 package main
 
-import "warehouse/iam3"
+import "warehouse/app"
 
 func main() {
-	iam3.Run()
+	app.Run()
 }
